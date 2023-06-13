@@ -24,8 +24,8 @@
         Monthly Expense App
     </header>
 <main class="container" style="max-width: 800px;">
-    <form action="" class="d-flex gap-2">
-        <input id="gelir-input" class="form-control" type="number" min="0" placeholder="enter earnings"/>
+    <form id="ekle-formu" class="d-flex gap-2">
+        <input id="gelir-input" class="form-control" type="number" min="0" placeholder="enter earnings" required/>
         <button id="ekle-btn" type="submit" class="btn btn-info">Add</button>
     </form>
     <form id="harcama-formu" class="row g-3 mt-4 border rounded-4 p-3 m-0">
@@ -72,8 +72,8 @@
 
   <tbody class="text-end">
     <tr>
-      <th id="geliriniz">Earnings:</th>
-      <td>0</td>
+      <th >Earnings:</th>
+      <td id="geliriniz">0</td>
     </tr>
 
     <tr>
