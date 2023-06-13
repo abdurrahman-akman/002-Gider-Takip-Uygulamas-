@@ -22,9 +22,19 @@ ekleFormu.addEventListener("submit", (e) => {
 gelirler = gelirler +  Number(gelirInput.value) //? string eklemeyi engelledik
 
 
+localStorage.setItem("gelirler", gelirler) //?gelirlerin kalıcı olması için local stroge kopyalıyoruz
+
+
 ekleFormu.reset() //?input değerini sıfırladık
 
 hesaplaVeGuncelle() //?değişiklikleri DOM a yazan fonk
+})
+
+
+//? sayfa her yuklendikten sonra çalışır
+window.addEventListener("load", () => {
+    gelirler = Number(localStorage.getItem("gelirler"))
+    hesaplaVeGuncelle()
 })
 
 //? Functions
