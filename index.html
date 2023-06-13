@@ -32,20 +32,20 @@
         <h4 class="text-center">Expense Form</h4>
         <div class="col-6">
           <label for="harcama-alani" class="form-label">Spending Area</label>
-          <input type="text" class="form-control" id="harcama-alani" placeholder="greengrocer, grocery, bill">
+          <input  type="text" class="form-control" id="harcama-alani" placeholder="greengrocer, grocery, bill" required>
         </div>
         <div class="col-6">
           <label for="tarih" class="form-label">Date</label>
-          <input type="date" class="form-control" id="tarih">
+          <input type="date" class="form-control" id="tarih" required>
         </div>
         <div class="col-12">
           <label for="miktar" class="form-label">Amount Spent</label>
-          <input type="number" class="form-control" id="miktar" placeholder="1000 $">
+          <input type="number" class="form-control" id="miktar" placeholder="1000 $" required>
         </div>
         
         
         <div class="col-12 text-center">
-          <button type="submit" class="btn btn-info">Sign in</button>
+          <button id="kaydet" type="submit" class="btn btn-info">Save</button>
         </div>
       </form>
 <table id="harcama-tablosu" class="table table-bordered table-hover table-striped mt-4 text-center">
@@ -87,6 +87,10 @@
     </tr>
   </tbody>
 </table>
+
+<section class="text-center">
+  <button class="btn btn-info">Clear</button>
+</section>
 </main>
     <script src="app.js"></script>
     </body>
